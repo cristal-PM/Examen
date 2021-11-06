@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title> Barra de progreso</title>
+    <meta name="viewport" content="width=device-with,scale=1.0, minimun-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <div class="container-progressbar">
+            <div class="progressbar "> </div>
+        </div>
+        <h1> Barra de progreso</h1>
+       
+
+        <div class="contenedor">
+    <progress value=0 max=100 id="barra" class="progressbar"></progress>
+            <input type="button" value="cargar" id="cargar" onclick="setInterval('cargar()',250)"/>
+        </div>
+        <script type="text/javascript">
+            function cargar(){
+                var barra = document.getElementById('barra')
+                 barra.value +=10
+            }
+        </script>
+    </body>
+    
+</html>
